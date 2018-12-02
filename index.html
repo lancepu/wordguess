@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>80s Word Guess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon-LP.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+</head>
+
+<body>
+    <audio id="gameAudio" src="assets\\audio\\BeeGees_StayinAlive_Trimmed.mp3" type="audio/mpeg">
+    </audio>
+    <div class="row text-center">
+        <div class="col-12">
+            <img class="img-fluid" src="assets/images/banner.jpg" alt="banner">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="col-12" id="answerText"></h1>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-12 resultImg">
+                        <img class="img-fluid" id="resultImg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 id="resultText"></h1>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <h4 class="col-12">Win</h4>
+                    <h5 class="col-12" id="winCountDisplay">0</h5>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">Word</h4>
+                    <h5 class="col-12" id="wordDisplay">_ _ _ _ _</h5>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">Letters Guessed</h4>
+                    <h5 class="col-12" id="lettersGuessed">[ ]</h5>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">Remaining Guess</h4>
+                    <h5 class="col-12" id="remainingGuess">12</h5>
+                </div>
+                <div class="row">
+                    <h4 class="col-12">Elapsed Time</h4>
+                    <h5 class="col-12" id="timer">00:00</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Modal Box-->
+    <div class="modal fade show" tabindex="-1" role="dialog" id="launchModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title">Welcome to the 80's Word Guess Game!</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Press <strong>any key on your keyboard</strong> to start the game, have fun!</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/songList.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

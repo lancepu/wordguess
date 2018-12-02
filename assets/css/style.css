@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'vcr_osd_monoregular';
+    src: url('../font/vcr_osd_mono_1.001-webfont.woff2') format('woff2'),
+         url('../font/vcr_osd_mono_1.001-webfont.woff') format('woff'),
+         url('../font/vcr_osd_mono_1.001-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.modal {
+  display:block;
+}
+
+.modal-content{
+  background-color:#ff48c4;
+}
+
+body{
+  background-image: url(../images/bkgd_img.png);
+  background-size: cover;
+} 
+
+.col-md-6 {
+  border: 3px dashed gray;
+}
+
+h1 {
+font-family: 'vcr_osd_monoregular', Arial, sans-serif;
+color: #ff48c4;
+margin: 0.5em;
+}
+
+h4 {
+font-family: 'vcr_osd_monoregular', Arial, sans-serif;
+color: #c04df9;
+}
+
+h5 {
+font-family: 'vcr_osd_monoregular', Arial, sans-serif;
+color: #f3ea5f;
+}
+
+.resultImg{
+  height: 300px;
+  margin-top: 1rem;
+}
+
+#resultImg{
+  max-height: 100%;
+  max-width: 100%;
+}
